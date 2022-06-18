@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ugnet/Utils/course.dart';
+import 'package:ugnet/Utils/map.dart';
 import 'package:ugnet/Utils/task.dart';
 
 class TaskCard extends StatelessWidget {
@@ -70,14 +71,14 @@ class TaskCard extends StatelessWidget {
                                   padding: EdgeInsets.symmetric(
                                       vertical: 2.0, horizontal: 4.0),
                                   child: CircleAvatar(maxRadius: 12.0),
-                                )
-                                ,
+                                ),
                                 //lecture name
-                                Text(taskInfo.author, style: Theme.of(context).textTheme.titleMedium)
+                                Text(taskInfo.author,
+                                    style:
+                                        Theme.of(context).textTheme.titleMedium)
                               ],
                             ),
                             Row(
-
                               children: [
                                 const Padding(
                                   padding: EdgeInsets.symmetric(
@@ -89,9 +90,11 @@ class TaskCard extends StatelessWidget {
                                 GestureDetector(
                                     onTap: () {
                                       // Route to map
+                                      LaunchMap.openMap(5.6553, 0.1830); // for now opens map to the location of the school.
                                     },
                                     child: SizedBox(
-                                      width: MediaQuery.of(context).size.width * 0.6,
+                                      width: MediaQuery.of(context).size.width *
+                                          0.6,
                                       height: 50.0,
                                       child: Center(
                                         child: Text(taskInfo.location,

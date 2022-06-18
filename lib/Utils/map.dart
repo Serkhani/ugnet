@@ -1,7 +1,7 @@
 import 'dart:io';
 
-class Map {
-  Map._();
+class LaunchMap {
+  LaunchMap._();
   static Future<void> openMap(double lat, double lng) async {
     String googleUrl = 'https://www.google.com/maps/search/?api=1&query=$lat,$lng';
     // String googleUrl = 'comgooglemaps://?center=$lat,$lng'; one must go!
