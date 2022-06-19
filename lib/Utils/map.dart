@@ -1,26 +1,27 @@
 import 'dart:io';
+import 'package:url_launcher/url_launcher.dart';
 
 class LaunchMap {
   LaunchMap._();
   static Future<void> openMap(double lat, double lng) async {
-    String googleUrl = 'https://www.google.com/maps/search/?api=1&query=$lat,$lng';
+    Uri googleUrl = Uri.parse('https://www.google.com/maps/search/?api=1&query=$lat,$lng');
     // String googleUrl = 'comgooglemaps://?center=$lat,$lng'; one must go!
-    String appleUrl = 'https://maps.apple.com/?q=$lat,$lng';
+    Uri appleUrl = Uri.parse('https://maps.apple.com/?q=$lat,$lng');
     if (Platform.isIOS) {
-      if (await canLaunch(appleUrl)) {
-        await launch(googleUrl);
+      if (await canLaunchUrl(appleUrl)) {
+        await launchUrl(googleUrl);
       } else {
         // Can not launch with apple maps
-        if (await canLaunch(googleUrl)) {
-          await launch(googleUrl);
+        if (await canLaunchUrl(googleUrl)) {
+          await launchUrl(googleUrl);
         } else {
           // Can not google maps
         }
       }
     } else {
       // Platform is android
-      if (await canLaunch(googleUrl)) {
-        await launch(googleUrl);
+      if (await canLaunchUrl(googleUrl)) {
+        await launchUrl(googleUrl);
       } else {
         // Can not google maps
       }

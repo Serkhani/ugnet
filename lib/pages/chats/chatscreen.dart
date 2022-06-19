@@ -132,7 +132,7 @@ class ChatScreenPageState extends State<ChatScreen> {
     types.PreviewData previewData,
   ) {
     final index = messages.indexWhere((element) => element.id == message.id);
-    final updatedMessage = messages[index].copyWith(previewData: previewData);
+    final updatedMessage = (messages[index] as types.TextMessage).copyWith(previewData: previewData);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       setState(() {
         messages[index] = updatedMessage;

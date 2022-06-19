@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ugnet/Utils/course.dart';
 import 'package:ugnet/Utils/map.dart';
 import 'package:ugnet/Utils/task.dart';
 
 class TaskCard extends StatelessWidget {
-  const TaskCard({Key? key, required this.taskInfo}) : super(key: key);
+  const TaskCard({Key?
+        key, required this.taskInfo}) : super(key: key);
   final Task taskInfo;
   @override
   Widget build(BuildContext context) {
