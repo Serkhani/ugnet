@@ -33,13 +33,13 @@ class MyHomePage extends StatelessWidget {
                     baseStyle: ThemeInfo().bodyMTextStyle,
                     selectedStyle: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 24.0)),
                 const ChatPage()),
-            ScreenHiddenDrawer(
-                ItemHiddenMenu(
-                    name: "Map",
-                    colorLineSelected: Colors.grey,
-                    baseStyle: ThemeInfo().bodyMTextStyle,
-                    selectedStyle: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 24.0)),
-                const TheMap()),
+            // ScreenHiddenDrawer(
+            //     ItemHiddenMenu(
+            //         name: "Map",
+            //         colorLineSelected: Colors.grey,
+            //         baseStyle: ThemeInfo().bodyMTextStyle,
+            //         selectedStyle: Theme.of(context).textTheme.titleLarge!.copyWith(fontSize: 24.0)),
+            //     const TheMap()),
             ScreenHiddenDrawer(
                 ItemHiddenMenu(
                     name: "Notification",
