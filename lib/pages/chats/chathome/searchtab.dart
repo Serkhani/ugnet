@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ugnet/Utils/chat_tile.dart';
 import 'package:ugnet/models/chathead.dart';
-import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 import 'package:ugnet/pages/chats/chatscreen.dart';
 
 class SearchTab extends StatefulWidget {
@@ -79,7 +78,7 @@ class Search extends SearchDelegate {
                       Get.to(ChatScreen(chat: chats[index]),
                           curve: Curves.decelerate);
                     },
-                    leading: ChatHead(),
+                    leading: const ChatHead(),
                     title: Text(chats[index].title,
                         style: Theme.of(context).textTheme.titleMedium)))
             : Container();

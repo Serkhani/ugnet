@@ -26,7 +26,7 @@ class ToDo extends StatelessWidget {
             "Wrestling is a fake sport but loved by many... interesting thing to know... this is prove that the human race actually adores a good lie");
     List events = [course, task];
     ScrollController todoScrollCon = ScrollController();
-    var tasks = [1, 2, 3];
+    // var tasks = [1, 2, 3];
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Theme.of(context).backgroundColor,

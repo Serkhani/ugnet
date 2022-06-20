@@ -9,7 +9,7 @@ class TimeLeft extends StatelessWidget {
     return Row(
       children: [
         Padding(
-          padding: EdgeInsets.only(right: 4.0),
+          padding: const EdgeInsets.only(right: 4.0),
           child: Icon(Icons.arrow_drop_down_circle_sharp,
               size: 10.0, color: Colors.red.shade700),
         ),

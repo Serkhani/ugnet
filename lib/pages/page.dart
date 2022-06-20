@@ -4,7 +4,7 @@ import 'package:ugnet/helpers/theme_info.dart';
 // import 'package:ugnet/pages/booking/booking.dart';
 import 'package:ugnet/pages/chats/chatspage.dart';
 import 'package:ugnet/pages/home/home.dart';
-import 'package:ugnet/pages/map/themap.dart';
+// import 'package:ugnet/pages/map/themap.dart';
 import 'package:ugnet/pages/notifications/notifications.dart';
 import 'package:ugnet/pages/suggestion/suggest.dart';
 

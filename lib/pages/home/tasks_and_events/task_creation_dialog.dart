@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:ugnet/models/inputfield.dart';
 import 'package:ugnet/models/time_selector.dart';
 
@@ -20,7 +19,7 @@ class CreateTaskDialogBox extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       elevation: 8.0,
       child: Container(
-        margin: EdgeInsets.all(8.0),
+        margin: const EdgeInsets.all(8.0),
         height: MediaQuery.of(context).size.height * 0.7,
         width: MediaQuery.of(context).size.width * 0.7,
         child: Column(children: [
@@ -35,12 +34,12 @@ class CreateTaskDialogBox extends StatelessWidget {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Icon(Icons.check)),
+                      icon: const Icon(Icons.check)),
                   IconButton(
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Icon(Icons.close_rounded)),
+                      icon: const Icon(Icons.close_rounded)),
                 ],
               )
             ],
