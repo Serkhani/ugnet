@@ -1,18 +1,9 @@
-# UGnet🎥
+## UGnet🎥
 A flutter app ui that that organizes various avenues(class group chats, announcement feed, school website, etc.) used by ✨college students✨.
 
-https://user-images.githubusercontent.com/6053155/170525726-2db23ae0-97b8-4bd1-8c95-00da60ce099f.mp4
+## App In Use
 
-All done WITHOUT video editing or asset compiling. Just pure ✨programming magic✨.
-
-Created by Lewis Menelaws & [TMRRW](https://tmrrwinc.ca)
-
-[<picture>
-
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/6053155/170528535-e274dc0b-7972-4b27-af22-637f8c370133.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/6053155/170528582-cb6671e7-5a2f-4bd4-a048-0e6cfa54f0f7.png">
-  <img src="https://user-images.githubusercontent.com/6053155/170528582-cb6671e7-5a2f-4bd4-a048-0e6cfa54f0f7.png" width="350">
-</picture>](https://tmrrwinc.ca)
+https://user-images.githubusercontent.com/66341820/193717431-8454cbb3-3dde-4f9d-ad72-b05883fa5ff8.mp4
 
 ## Motivation 🤔
 
